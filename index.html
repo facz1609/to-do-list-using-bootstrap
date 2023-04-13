@@ -19,44 +19,50 @@
 
     <link rel="stylesheet" href="style.css">
     <script async defer src="script.js"></script>
+    
 </head>
 <body>
-    <div class="container">
-        <h1 class="h1" align="center">Todo List</h1>
-        <div class="row">
+    <div class="bg-image" style="background-image: url('bgimage.jpg');background-size: cover; height: 100vh;">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.8); height: 100%;">
+                    <div class="container">
+                        <h1 class="h1" align="center" >Todo List</h1>
+                        <div class="row">
 
-            <!-- input area using form -->
-            <div class="col-md-7">
-                <div class="form-group">
-                    <label for="inpNewTask" class="form-label">New Task</label>
-                    <input type="text" class="form-control" id="inpNewTask" aria-describedby="newtaskHelp"
-                    placeholder="Enter the name of the task">
-                    <small id="newtaskHelp" class="form-text text-muted">A short one line description of your task</small>
-                </div>
-            </div>
+                            <!-- input area using form -->
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label for="inpNewTask" class="form-label">New Task</label>
+                                    <input type="text" class="form-control" id="inpNewTask" aria-describedby="newtaskHelp"
+                                    placeholder="Enter the name of the task">
+                                    <small id="newtaskHelp" class="form-text text-muted">A short one line description of your task</small>
+                                </div>
+                            </div>
 
-            <!-- button section  -->
-            <div class="col-md-5">
-                <div class="row">
-                    <div class="col-6 col-sm-3 col-md-6 p-1">
-                        <button class="btn btn-success col" disabled id="btnAdd" ><i class="fas fa-plus-square"></i> Add</button>
-                    </div>
-                    <div class="col-6 col-sm-3 col-md-6 p-1">
-                        <button class="btn btn-danger col" disabled id="btnReset" ><i class="fas fa-backspace"></i>  Reset</button>
-                    </div>
-                    <div class="col-6 col-sm-3 col-md-6 p-1">
-                        <button class="btn btn-info col" disabled id="btnSort">
-                            <i class="fas fa-sort-amount-down"></i> Sort</button>
-                    </div>
-                    <div class="col-6 col-sm-3 col-md-6 p-1">
-                        <button class="btn btn-warning col" disabled id="btnCleanup" ><i class="fas fa-trash-alt"></i> Cleanup</button>
+                            <!-- button section  -->
+                            <div class="col-md-5">
+                                <div class="row">
+                                    <div class="col-6 col-sm-3 col-md-6 p-1">
+                                        <button class="btn btn-success col" disabled id="btnAdd" ><i class="fas fa-plus-square"></i> Add</button>
+                                    </div>
+                                    <div class="col-6 col-sm-3 col-md-6 p-1">
+                                        <button class="btn btn-danger col" disabled id="btnReset" ><i class="fas fa-backspace"></i>  Reset</button>
+                                    </div>
+                                    <div class="col-6 col-sm-3 col-md-6 p-1">
+                                        <button class="btn btn-info col" disabled id="btnSort">
+                                            <i class="fas fa-sort-amount-down"></i> Sort</button>
+                                    </div>
+                                    <div class="col-6 col-sm-3 col-md-6 p-1">
+                                        <button class="btn btn-warning col" disabled id="btnCleanup" ><i class="fas fa-trash-alt"></i> Cleanup</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Task Lists -->
+                        <ul class="row list-group m-2" id="ulTasks"></ul>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Task Lists -->
-        <ul class="row list-group m-2" id="ulTasks"></ul>
-    </div>
-</body>
+    <div>
 </html>

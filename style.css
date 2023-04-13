@@ -2,3 +2,7 @@
     color: #6c757d;
     text-decoration: line-through;
 }
+
+h1,.form-label{
+  color: white;
+}
